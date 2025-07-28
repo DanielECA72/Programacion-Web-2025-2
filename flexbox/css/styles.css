@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#padre{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;    
+    
+    justify-content: space-evenly; /* alinea los hijos en el centro - eje principal*/
+    align-items: center; /* alinea los hijos en el centro - eje secundario*/
+    flex-wrap: wrap; /* permite que los hijos se ajusten a la pantalla */
+    align-content: center; /* alinea los hijos en el centro si hay espacio extra */
+}
+
+.hijo1{
+    width: 80vw;
+    height: 80vh;
+    background-color: blue;   
+    display: flex;    
+    justify-content: space-evenly; /* alinea los hijos en el centro - eje principal*/
+    align-items: end; /* alinea los hijos en el centro - eje secundario*/
+     gap: 20px;
+    flex-wrap: nowrap; /* permite que los hijos se ajusten a la pantalla */
+    align-content: end; /* alinea los hijos en el centro si hay espacio extra */
+
+}
+.hijo2{
+    width: 1500px;
+    height: 1500px;
+    background-color: yellow;
+    border-radius: 50%;   
+}
+
+.hijo3{
+    width: 1500px;
+    height: 1500px;
+    background-color: red;   
+}
